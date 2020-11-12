@@ -11,7 +11,7 @@ const contacts = createReducer([], {
 
 })
 const filter = createReducer("", {
-  [phonebookActions.changeFilter]:(state, action)=>(action.payload ? action.payload : ""),
+  [phonebookActions.changeFilter]:(_, action)=>(action.payload),
 })
 
 
